@@ -52,3 +52,68 @@ background-color: rgb(48, 47, 47);
            }
 
            
+        
+           #cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+#pergunta{
+    display: flex;
+    justify-content: center;
+}
+
+#pergunta div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+label,input{
+    margin-bottom: 10px;
+    
+}
+
+button{
+    height: 40px;
+    width: 200px;
+}
+
+input{
+    height: 50px;
+    width: 75px;
+    font-size: 25px;
+}
+
+#resultado{
+    margin-top: 25px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.resultado{
+    border: 5px solid rgb(0, 0, 0);
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+}
+
+p{
+color: white;
+font-size: 20px;
+}
+
+img{
+    width: 650px;
+    height: 400px;
+}
+
+h6{
+
+    color: white;
+    font-size: 40px;
+}

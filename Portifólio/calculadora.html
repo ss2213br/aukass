@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <header id="cabecalho">
+        <h1>MINHA TABUADA</h1>
+    </header>
+    <section id="pergunta">
+        <div>
+            <label for="">QUAL O NUMERO QUE VOCE DESEJA VER A TABUADA?</label>
+            <center>
+                <input type="number" id="numero">
+                <br>
+                <button onclick="tabuada()">VER TABUADA</button>
+            </center>
+        </div>
+    </section>
+    <section id="resultado">
+        <div class="resultado" id="adicao">ADIÇÃO <hr></div>,
+
+        <div class="resultado" id="subtracao">SUBTRAÇÃO <hr></div>
+
+        <div class="resultado" id="multiplicacao">MULTIPLICAÇÃO <hr></div>
+
+        <div class="resultado" id="divisao">DIVISÃO <hr>
+        </div>
+    </section>
+</div>
+
+
+
+    <script>
+        function tabuada() {
+
+let numero = Number(document.getElementById("numero").value)
+
+let ad = document.getElementById("adicao")
+let sub = document.getElementById("subtracao")
+let multi = document.getElementById("multiplicacao")
+let div = document.getElementById("divisao")
+
+for (i = 0; i <= 10; i++) {
+    soma = numero + i 
+    ad.innerHTML += numero + " + " + i + " = " + soma + "<br>"
+
+    menos = i + numero 
+    sub.innerHTML += menos + " - " + numero + " = " + i + "<br>"
+
+    vezes = numero * i
+    multi.innerHTML += numero + " x " + i + " = " + vezes + "<br>"
+
+    dividi = i * numero
+    div.innerHTML += dividi + " ÷ " + numero + " = " + i + "<br>"
+}
+
+
+
+
+}
+    </script>
+</body>
+</html>
