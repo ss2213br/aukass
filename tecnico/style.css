@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   a {
+    text-decoration: none;
+    color: #fff;
+   }
+   li {
+    list-style: none;
+    
+   }
+
+
+body{
+background-color: rgb(48, 47, 47);
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+   }
+
+
+    .logo {
+        font-size: 25px;}
+
+        .menu {
+            display: flex;
+            gap: 1em;
+            font-size: 18px;
+            
+           }
+           .menu li {
+            padding: 5px 14px;
+           }
+           
+           .menu li:hover {
+            background-color: #464747;
+            border-radius: 5px;
+        
+           }
+
+           
+        
+           #cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+#pergunta{
+    display: flex;
+    justify-content: center;
+}
+
+#pergunta div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+label,input{
+    margin-bottom: 10px;
+    
+}
+
+button{
+    height: 40px;
+    width: 200px;
+}
+
+input{
+    height: 50px;
+    width: 75px;
+    font-size: 25px;
+}
+
+#resultado{
+    margin-top: 25px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.resultado{
+    border: 5px solid rgb(0, 0, 0);
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+}
+
+p{
+color: white;
+font-size: 20px;
+}
+
+img{
+    width: 650px;
+    height: 400px;
+}
+
+h6{
+
+    color: white;
+    font-size: 40px;
+}
+h1{
+
+    color: white;
+}
+label{
+    color: white;
+}
