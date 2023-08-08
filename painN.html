@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paiN gaming</title>
+</head>
+<body>
+    
+    
+    <h1>Arrays</h1>
+
+<label for="">Digite os nomes</label> 
+<br>
+<input type="nome"id="nome"> <button onclick="nome()">Adicionar</button>
+<br>
+<p id="res"></p>
+
+
+
+    <script>
+ 
+ function nome() {
+    var nomes = []
+    var nome = document.getElementById('nome').value
+    var res = document.getElementById('res')
+    nomes.push(nome)
+    
+
+    for(i=0; i< nomes.length; i++){
+res.innerHTML += nomes[i] + "<br>"
+
+    }
+ 
+
+}
+ 
+ 
+
+
+
+    </script>
+    
+</body>
+</html>
