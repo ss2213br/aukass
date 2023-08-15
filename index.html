@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paiN gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <center>
+        <h1>Sorteio</h1>
+
+<label for="">Digite um nome</label> 
+<br>
+<br>
+<input type="nome"id="nome">
+<br>
+<br> 
+<button onclick="nome()">Adicionar</button> <button onclick="sorteio()">Sortear</button>
+<br>
+<br>
+<p id="res"></p>
+<br>
+<br>
+ <div id="sorte"></div>
+ 
+
+    </center>
+
+
+    <script>
+ var nomes = []
+
+ function nome() {
+
+    var nome = document.getElementById('nome').value
+    var res = document.getElementById('res')
+    res.innerHTML =""
+    nomes.push(nome)
+    
+
+    for(i=0; i< nomes.length; i++){
+res.innerHTML += nomes[i] + "<br>"
+
+    }
+}
+
+function sorteio(){
+    var sorteio = document.getElementById('sorte')
+    var num = Math.round(Math.random() * nomes.length)
+     
+     sorteio.innerHTML = nomes[num]
+}
+ 
+ 
+
+
+
+    </script>
+    
+</body>
+</html>
